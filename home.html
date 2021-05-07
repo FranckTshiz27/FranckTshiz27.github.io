@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"  href="//use.fontawesome.com/releases/v5.0.7/css/all.css"> 
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PortFolio</title>
+</head>
+<body id="container">
+
+    <header>
+        <nav>
+
+        <div class="openMenu">
+                    
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul  class="mainMenu">
+
+                 <li class="nav__li">
+                <a href="#home" class="nav__a">  Accueil</a>
+                </li>
+
+                <li class="nav__li">
+                     <a href="#about" class="nav__a">  A propos</a>
+                </li>
+
+                <li class="nav__li">
+                    <a href="#projet" class="nav__a"> projets</a>
+               </li>
+
+                <li class="nav__li">
+                     <a href="#skills" class="nav__a"> Compétences</a>
+                </li>
+
+                <li class="nav__li">
+                    <a href="#contact" class="nav__a">Contacts</a>
+                </li>
+
+        </ul>
+
+        </nav>
+    </header>
+   
+   
+<main >        
+    <section class="home" id="home">
+                   
+        <div class="home__row" data-aos="zoom-in"  data-aos-easing="ease-out-cubic" 
+        data-aos-duration="2000">
+                    
+            <p class="home__row__heading">
+                Salut
+            </p>
+            <p class="home__row__heading">
+                Je suis
+            </p>
+            <p class="home__row__indetity">
+                <span id="nom" class="home__row__indetity__name" ></span> 
+                <span id="postNom"  class="home__row__identity__postName"></span>   
+            </p> 
+           
+            <p  class="home__row__profession" id="profession">
+                    
+             </p> 
+
+             <p  class="home__row__contact">
+                        Contactez-moi
+                        <br>
+                       
+                        et obtenez des solutions <span >belles</span>  et <span>intelligentes</span>!    
+            </p>
+        </div>
+                   
+        <div class="home__row--contact" data-aos="zoom-in"  data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+                    <button class="btn btn--contact"><i class="fab fa-github-square btn--turning"></i></button>
+                    <button class="btn btn--contact"><i class="fas fa-envelope-open-text btn--turning"></i></button>
+                    <button class="btn btn--contact"><i class="fab fa-linkedin-in btn--turning"></i></button>
+                    <button class="btn btn--contact"><i class="fab fa-twitter btn--turning"></i></button>         
+        </div>
+ 
+    </section>
+
+    <section class="about" id="about">
+        <div class="about__column--left"  data-aos="zoom-in-right" data-aos-duration="2500">
+
+            <div class="about__column__img-container">
+                <img src="images/imgimg-removebg-preview.png" alt="">
+            </div>
+            
+        </div>
+
+        <div class="about__column--right"  data-aos="zoom-in-left" data-aos-duration="2500">
+            <div  class="about__column--right__heading">
+             A Propos de moi
+            </div>
+    
+    
+            <div class="about__column--right__description">
+                        
+                <p id="description">
+                              
+                </p>          
+            </div>
+    
+            <div>
+                        
+                <button class="btn btn--cv">Télécharger mon CV</button>
+                               
+                        
+                </div>
+            </div> 
+    </section>
+
+    <section class="skills" id="skills">
+    
+                
+                   <div class="skills__title">
+                    Mes compétences
+                   </div>
+    
+                   <div class="skills__container"   data-aos="zoom-in"  data-aos-easing="ease-out-cubic"
+                   data-aos-duration="3000">
+                   
+                    <div class="skills__container__col">
+                        <label class="title">
+                            Langages
+                        </label>
+                        <div class=" container">
+                           
+                        <button class="btn btn--skills">
+                            <i class="fab fa-html5 btn--turning"></i> 
+                            <span id="html"></span>
+                           
+                        </button>
+                        <button class="btn btn--skills">
+                            <i class="fab fa-css3"></i>
+                            <span id="css"></span>
+                        </button>
+    
+                        <button class="btn btn--skills">
+                            <i class="fab fa-sass"></i>
+                            <span id="sass">
+                                
+                            </span>
+                            
+                        </button>
+                        <button class="btn btn--skills">
+                            <i class="fab fa-js"></i>
+                            
+                             <span id="js">
+                                
+                             </span>
+                        </button>
+                        <button class="btn btn--skills">
+                            <i class="fab fa-java">
+    
+                            </i> 
+                           <span id="jse"></span>
+                        </button>
+                        <button class="btn btn--skills">
+                            <i class="fab fa-windows btn--turning">
+    
+                            </i>
+                            <span id="csharp">
+                            </span>
+                            
+                            
+                        </button>
+                        
+                        
+                        </div>
+    
+                    </div>   
+                    <div class="skills__container__col">
+                        <label class="title">
+                            Librairies
+                        </label>
+                        
+                        <div class="container">
+                            
+                        <button class="btn btn--skills">
+                            <i class="fab fa-bootstrap btn--turning">
+    
+                            </i> 
+    
+                            <span id="bootstrap">
+                               
+                            </span>
+                           
+                        </button>
+                        <button class="btn btn--skills">
+                            <span id="jfx">
+    
+                            </span>
+                            
+                        </button>
+                        
+                        
+                        </div>
+    
+                    </div>   
+                    <div class="skills__container__col">
+                        <label class="title">
+                            Base de données
+                        </label>
+                        
+                        <div class=" container">
+                        
+                        <button class="btn btn--skills">  
+                            <span id="mysql">
+                               
+                            </span>
+                          
+                        </button>
+                        <button class="btn btn--skills">
+                            <span id="sqlserver">
+                               
+                            </span>
+                            
+                        </button>
+                        
+                        
+                        </div>
+    
+                    </div>    
+                    <div class="skills__container__col">
+                        <label class="title">
+                            
+                            Services Reporting
+                        </label>
+                       
+                        <div class=" container">
+                           
+                        <button class="btn btn--skills">
+    
+                            <span id="ireport">  </span>
+                             
+                        </button>
+                        <button class="btn btn--skills">
+                            <span id="crystal">
+                              
+                            </span>
+                            
+                        </button>
+                        
+                        
+                        </div>
+    
+                    </div>   
+                    <div class="skills__container__col">
+                        <div class="title">
+                            Gestion de projets
+                        </div>
+                        
+                        <div class=" container">
+                            
+                        <button class="btn btn--skills">
+                            <span id="scrum">
+                               
+                            </span>
+                            
+                        </button>
+                        </div>
+                    </div>            
+                   </div>
+    </section>
+    <section class="project" id="projet">
+
+            <div class="project__title">
+                 Mes projets
+            </div>
+
+            <div class="project__container">
+                    <div class="card-container card-container--shadow" data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-out-cubic">
+                        <div class="card">
+                            <div  class="card--header--light">
+                                Projet du Site de la KD
+
+                            </div>
+                                <div class="card--content">
+                                    Formulaire des contacts
+                                    un projet réalisé dans le cadre de ma formation à la Kinshasa Digital Academy;
+                                    consistant à mettre en place un système de gestion d'une liste des contacts.
+                                
+                                </div>
+                                
+                                 
+                                <div class="card--footer">
+                                   <button><i class="fab fa-github"></i></button>
+                                   <button><i class="far fa-heart"></i></button>
+                                   <button><i class="fas fa-bolt"></i></button>
+                                </div> 
+                        </div>
+                    </div>
+    
+                    <div class="card-container card-container--rounded" data-aos="fade-up" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
+                        <div class="card">
+                            <div  class="card--header">
+                                Projet formulaire
+
+                            </div>
+                                <div class="card--content">
+                                    Réproduction du site internet de la KD
+                                    PortFolio
+                                    un projet réalisé dans le cadre de ma formation à la Kinshasa Digital;
+                                    consistant à reproduire le site de la Kinshasa Digitale
+                                </div>
+                                <div class="card--footer">  
+                                <button><i class="fab fa-github"></i></button>
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="fas fa-bolt"></i></button>
+                            </div> 
+                        </div>
+                    </div>
+                
+                    <div class="card-container card-container--shadow"  data-aos="fade-up" data-aos-duration="3000">
+                        <div class="card">
+                               <div  class="card--header--light">
+                                   Projet PortFolio
+
+                               </div>
+                                <div class="card--content">
+                                    PortFolio
+                                    un projet réalisé dans le cadre de ma formation à la Kinshasa Digital;
+                                    consistant à présenter les différents travaux réalisés tout pendant de la formation
+                                </div>
+                               
+                                <div class="card--footer"> 
+                                <button><i class="fab fa-github"></i></button>
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="fas fa-bolt"></i></button>  
+                               </div> 
+                        </div>
+                    </div>      
+                    
+                    <div class="card-container card-container--rounded" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="card">
+                               <div  class="card--header">
+                                   ALLO_SKULL
+
+                               </div>
+                                <div class="card--content">
+                                    ALLO_SKULL est un projet visant à prendre en charge la gestion des écoles tant privées que publiques.
+                                    ALLO_SKULL se veut donc la première  plateforme pouvant répondre aux besoins des congolais en matière de léducation.
+                                    La version Desktop a été lancée depuis l'année 2017 et je travaille pour l'amélioration de cette dernière mais aussi sur les versions web et mobile.
+                                </div>
+                               
+                                <div class="card--footer"> 
+                                <button><i class="fab fa-github"></i></button>
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="fas fa-bolt"></i></button>  
+                               </div> 
+                        </div>
+                    </div>      
+        </div>    
+        <div class="project-actions">
+            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-angle-right"></i>
+           
+
+        </div>
+    </section>
+</main> 
+
+<footer id="contact">
+       
+        
+            <div class="compte-container">
+                <div class="compte-container__card" data-aos="fade-up" data-aos-duration="250" data-aos-easing="ease-out-cubic">
+                    <i class="fas fa-envelope"></i>
+                    E-MAIL
+                    <P>françoistshizbu27@gmail.com</P>
+                </div>
+                <div class="compte-container__card"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+                    <i class="fas fa-phone-alt"></i>
+                    Téléphone
+                    <p>
+                        +243824360292
+                    </p>
+                   
+                </div>
+                <div class="compte-container__card" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    <i class="fab fa-facebook"></i>
+                    Facebook
+                    <p>
+                        Franck Tshizubu
+                    </p>
+                </div>
+
+                <div class="compte-container__card" data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-out-cubic">
+                    <i class="fab fa-twitter-square"></i>
+                    Twitter
+
+                    <p>
+                        TSHIZUBU François
+                    </p>
+                   
+                </div>
+            </div>
+            <p class="compte-container__form__heading">Avez-vous quelque chose à partager avec moi ?</p>
+            <form  class="compte-container__form">
+               
+                <label>Email</label>
+                <input  class="compte-container__form__control"  placeholder="Entrez votre adresse Email!"/>
+                <label>Nom</label>
+                <input class="compte-container__form__control"  placeholder="Entrez votre nom"/>
+                <label>Message</label>
+               
+                <textarea  placeholder="Saisissez votre message..."></textarea>
+                
+
+                <button type="submit">NOUS FAIRE PARVENIR</button>
+
+            </form>
+            <div class="signature">
+                Designeted by @ François TSHIZUBU
+            </div>
+        
+
+</footer>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> 
+<script> 
+    AOS.init(); 
+</script>
+  <script src="js/animation.js"></script>
+  <script src="js/dbOperations.js"></script>
+  
+ 
+</body>
+</html>
