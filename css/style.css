@@ -12,7 +12,8 @@
   color: #0072CF;
   font-size: 13px;
   font-size: 12px;
-  padding: 7px 20px;
+  padding: 7px 5px;
+  width: 100px;
 }
 .btn--skills img {
   width: 20px;
@@ -107,9 +108,10 @@
     color: #0072CF;
     font-size: 11px;
     padding: 5px;
+    width: 30px;
   }
   .btn--skills img {
-    width: 20px;
+    width: 10px;
     height: auto;
   }
 }
@@ -573,7 +575,7 @@ nav .nav__a:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 10px;
+    margin: 5px;
   }
   .skills .skills__container .skills__container__col .title {
     font-family: "Roboto", sans-serif;

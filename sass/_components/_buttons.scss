@@ -12,7 +12,8 @@
   color: $secondaryColor;
   font-size: 13px;
   font-size: 12px;
-  padding: 7px 20px;
+  padding: 7px 5px;
+  width: 100px;
   img {
     width: 20px;
     height: auto;
@@ -106,8 +107,9 @@
     color: $secondaryColor;
     font-size: 11px;
     padding: 5px;
+    width: 30px;
     img {
-      width: 20px;
+      width: 10px;
       height: auto;
     }
   }
