@@ -169,7 +169,7 @@ main section {
     width: 100%;
   }
   header section {
-    padding: 2%;
+    padding: 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -466,7 +466,7 @@ nav .nav__a:hover {
     border-bottom: 1px #ebe7e7 solid;
   }
   .about .about__column--left {
-    width: 40%;
+    width: 45%;
     background-color: #01070e;
     justify-content: center;
     height: 300px;
@@ -496,7 +496,7 @@ nav .nav__a:hover {
     color: #FFF;
     font-family: "Roboto", sans-serif;
     padding: 0 10px;
-    width: 61%;
+    width: 56%;
   }
   .about .about__column--right .about__column--right__heading {
     color: #0072CF;
