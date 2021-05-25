@@ -220,7 +220,7 @@ nav .nav__a:hover {
     margin: 0;
   }
   nav .mainMenu {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-end;
     list-style: none;
@@ -462,7 +462,7 @@ nav .nav__a:hover {
     padding: 15px;
   }
   .about .about__column--left .about__column__img-container img {
-    width: 180px;
+    width: 170px;
     height: auto;
     border-radius: 50em;
     padding: 10px;
@@ -618,12 +618,6 @@ nav .nav__a:hover {
   z-index: -1;
 }
 
-@media all and (max-width: 800px) {
-  .box-project__container {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .card-container {
   display: block;
   width: 230px;
@@ -761,21 +755,24 @@ footer .compte-container__form label {
 footer .compte-container__form textarea {
   width: 33.5em;
 }
-footer .compte-container__form input, footer .compte-container__form textarea {
+footer .compte-container__form input,
+footer .compte-container__form textarea {
   background-color: #131A26;
   font-family: "Roboto", sans-serif;
   border: none;
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #fff;
   padding: 5px;
   color: #FFF;
   transition: 1s;
 }
-footer .compte-container__form input:focus, footer .compte-container__form textarea:focus {
+footer .compte-container__form input:focus,
+footer .compte-container__form textarea:focus {
   outline: none;
   border-bottom: 1px solid #0072CF;
 }
-footer .compte-container__form input::placeholder, footer .compte-container__form textarea::placeholder {
-  color: #FFF;
+footer .compte-container__form input::placeholder,
+footer .compte-container__form textarea::placeholder {
+  color: #fff;
 }
 footer .compte-container__form button {
   margin: 20px 0px;
@@ -801,7 +798,7 @@ footer .compte-container__form button {
   display: flex;
   flex-direction: column;
   background-color: #FFF;
-  width: 220px;
+  width: 200px;
   height: 130px;
   margin: 10px;
   justify-content: space-between;
@@ -877,21 +874,24 @@ textarea {
   footer .compte-container__form textarea {
     width: 17em;
   }
-  footer .compte-container__form input, footer .compte-container__form textarea {
+  footer .compte-container__form input,
+footer .compte-container__form textarea {
     background-color: #131A26;
     font-family: "Roboto", sans-serif;
     border: none;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #fff;
     padding: 5px;
     color: #FFF;
     transition: 1s;
   }
-  footer .compte-container__form input:focus, footer .compte-container__form textarea:focus {
+  footer .compte-container__form input:focus,
+footer .compte-container__form textarea:focus {
     outline: none;
     border-bottom: 1px solid #0072CF;
   }
-  footer .compte-container__form input::placeholder, footer .compte-container__form textarea::placeholder {
-    color: #FFF;
+  footer .compte-container__form input::placeholder,
+footer .compte-container__form textarea::placeholder {
+    color: #fff;
   }
   footer .compte-container__form button {
     margin: 20px 0px;
@@ -912,18 +912,19 @@ textarea {
     justify-content: center;
     width: 100%;
     margin: 20px;
+    flex-wrap: wrap;
   }
   .compte-container .compte-container__card {
     display: flex;
     flex-direction: column;
     background-color: #FFF;
-    width: 100px;
+    width: 110px;
     height: 80px;
-    margin: 5px;
+    margin: 3px;
     justify-content: space-between;
     align-items: center;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 700;
     box-sizing: border-box;
     padding: 10px;
   }
@@ -932,9 +933,10 @@ textarea {
     font-size: 1em;
   }
   .compte-container .compte-container__card p {
-    font-weight: 300;
-    font-size: 0.5em;
+    font-weight: 700;
+    font-size: 0.6em;
     font-family: "Roboto", sans-serif;
+    text-align: center;
   }
 
   input::placeholder {

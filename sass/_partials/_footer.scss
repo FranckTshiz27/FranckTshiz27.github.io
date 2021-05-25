@@ -1,88 +1,194 @@
-footer
-{
+footer {
+  background-color: $primaryColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .compte-container__form__heading {
+    font-family: $primary-font;
+    font-size: 1.5em;
+    color: $lightColor;
+    font-weight: 400;
+    margin: 40px 0 10px 0px;
+  }
+
+  .signature {
+    padding: 100px 0 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    color: $lightColor;
+    font-family: $primary-font;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+  }
+  .compte-container__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2px 50px;
+
+    .compte-container__form__control {
+      display: flex;
+      width: 40em;
+      margin: 20px 0;
+    }
+
+    label {
+      color: $lightColor;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+    textarea {
+      width: 33.5em;
+    }
+    input,
+    textarea {
+      background-color: $primaryColor;
+      font-family: $primary-font;
+      border: none;
+      border-bottom: 1px solid #fff;
+      padding: 5px;
+      color: $lightColor;
+      transition: 1s;
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid $secondaryColor;
+      }
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+    button {
+      margin: 20px 0px;
+      background-color: $secondaryColor;
+      border: none;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      color: $lightColor;
+      font-size: 14px;
+      width: 39em;
+      cursor: pointer;
+      padding: 0.6em 0;
+    }
+  }
+}
+.compte-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 40px;
+
+  .compte-container__card {
+    display: flex;
+    flex-direction: column;
+    background-color: $lightColor;
+    width: 200px;
+    height: 130px;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding: 10px;
+
+    i {
+      color: $secondaryColor;
+      font-size: 1.9em;
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 0.5em;
+      font-family: $primary-font;
+    }
+  }
+}
+
+input::placeholder {
+  color: rgba($color: #fff, $alpha: 0.7);
+}
+
+textarea {
+  background-color: yellow;
+}
+
+@media all and (max-width: 789px) {
+  footer {
     background-color: $primaryColor;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-
-    .compte-container__form__heading
-    {
-        font-family: $primary-font;
-        font-size: 1.5em;
-        color: $lightColor;
-        font-weight: 400;
-        margin:40px 0 10px 0px
-    
+    .compte-container__form__heading {
+      font-family: $primary-font;
+      font-size: 1em;
+      color: $lightColor;
+      font-weight: 200;
+      margin: 30px 0 10px 0px;
+      font-weight: 600;
     }
 
-    .signature
-    {
-      padding: 100px 0 10px 0 ;
+    .signature {
+      padding: 50px 0 10px 0;
       width: 100%;
       box-sizing: border-box;
-      margin: 0;    
-      color:$lightColor;
-      font-family: $primary-font; 
+      margin: 0;
+      color: $lightColor;
+      font-family: $primary-font;
       display: flex;
       justify-content: center;
       font-weight: 400;
     }
-    .compte-container__form
-    {
+    .compte-container__form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 2px 0;
+      width: 200px;
+      box-sizing: border-box;
+      .compte-container__form__control {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items:flex-start;
-        margin: 2px 50px;
-         
-        .compte-container__form__control
-        {
-            display: flex;
-            width: 40em;
-            margin: 20px 0;
-        }
+        width: 20em;
+      }
 
+      label {
+        color: $lightColor;
+        font-size: 1em;
+        font-weight: 600;
+      }
+      textarea {
+        width: 17em;
+      }
+      input,
+      textarea {
+        background-color: $primaryColor;
+        font-family: $primary-font;
+        border: none;
+        border-bottom: 1px solid #fff;
+        padding: 5px;
+        color: $lightColor;
+        transition: 1s;
 
-        label
-        {
-            color:$lightColor;
-            font-size: 1.2em;
-            font-weight: 600;
-           
+        &:focus {
+          outline: none;
+          border-bottom: 1px solid $secondaryColor;
         }
-        textarea
-        {
-            width:33.5em;
+        &::placeholder {
+          color: #fff;
         }
-        input,textarea
-        {
+      }
 
-            background-color: $primaryColor;
-            font-family: $primary-font;
-            border: none;
-            border-bottom: 1px solid #FFF;
-            padding: 5px;
-            color: $lightColor;
-            transition: 1s;
-            
-            
-            &:focus
-            {
-                outline: none;
-                border-bottom: 1px solid $secondaryColor;
-            }
-            &::placeholder
-            {
-                color: #FFF;
-            }
-           
-        }
-
-    button
-    {
-        margin: 20px 0px ;
+      button {
+        margin: 20px 0px;
         background-color: $secondaryColor;
         border: none;
         text-align: center;
@@ -90,204 +196,47 @@ footer
         justify-content: center;
         color: $lightColor;
         font-size: 14px;
-        width: 39em;
+        width: 20em;
         cursor: pointer;
         padding: 0.6em 0;
+      }
     }
-        
+  }
+  .compte-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+    flex-wrap: wrap;
+
+    .compte-container__card {
+      display: flex;
+      flex-direction: column;
+      background-color: $lightColor;
+      width: 110px;
+      height: 80px;
+      margin: 3px;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1em;
+      font-weight: 700;
+      box-sizing: border-box;
+      padding: 10px;
+      i {
+        color: $secondaryColor;
+        font-size: 1em;
+      }
+
+      p {
+        font-weight: 700;
+        font-size: 0.6em;
+        font-family: $primary-font;
+        text-align: center;
+      }
     }
-}
-.compte-container
-{
-   display:flex;
-   justify-content: center;
-   width: 100%;
-   margin: 40px;
+  }
 
-  
-
-   .compte-container__card
-   {
-       display: flex;
-       flex-direction: column;
-       background-color: $lightColor;
-       width: 220px;
-       height: 130px;
-       margin: 10px;
-       justify-content:space-between;
-       align-items:center;
-       font-size: 1.5em;
-       font-weight: 600;
-       box-sizing: border-box;
-       padding: 10px;
-
-       i
-       {
-           color: $secondaryColor;
-           font-size:1.9em;
-       }
-
-       p
-       {
-           font-weight: 600;
-           font-size: 0.5em;
-           font-family: $primary-font;
-       }
-   }
-}
-
-input::placeholder
-{
-    color: rgba($color: #FFF, $alpha: 0.7);
-}
-
-
-
-textarea
-{
-    background-color: yellow;
-}
-
-@media all and (max-width:789px){
-    footer
-    {
-        background-color: $primaryColor;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        .compte-container__form__heading
-        {
-            font-family: $primary-font;
-            font-size: 1em;
-            color: $lightColor;
-            font-weight: 200;
-            margin:30px 0 10px 0px;
-            font-weight: 600;
-
-        
-        }
-    
-        .signature
-        {
-          padding: 50px 0 10px 0 ;
-          width: 100%;
-          box-sizing: border-box;
-          margin: 0;    
-          color:$lightColor;
-          font-family: $primary-font; 
-          display: flex;
-          justify-content: center;
-          font-weight: 400;
-        }
-        .compte-container__form
-        {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items:center;
-            margin: 2px 0;
-            width: 200px;
-            box-sizing: border-box;
-            .compte-container__form__control
-            {
-                display: flex;
-                width: 20em;
-               
-            }
-    
-    
-            label
-            {
-                color:$lightColor;
-                font-size: 1em;
-                font-weight: 600;
-               
-            }
-            textarea
-            {
-                width:17em;
-            }
-            input,textarea
-            {
-    
-                background-color: $primaryColor;
-                font-family: $primary-font;
-                border: none;
-                border-bottom: 1px solid #FFF;
-                padding: 5px;
-                color: $lightColor;
-                transition: 1s;
-                
-                
-                &:focus
-                {
-                    outline: none;
-                    border-bottom: 1px solid $secondaryColor;
-                }
-                &::placeholder
-                {
-                    color: #FFF;
-                }
-               
-            }
-    
-        button
-        {
-            margin: 20px 0px ;
-            background-color: $secondaryColor;
-            border: none;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            color: $lightColor;
-            font-size: 14px;
-            width: 20em;
-            cursor: pointer;
-            padding: 0.6em 0;
-        }
-            
-        }
-    }
-    .compte-container
-    {
-       display:flex;
-       justify-content: center;
-       width: 100%;
-       margin:20px;
-    
-       .compte-container__card
-       {
-           display: flex;
-           flex-direction: column;
-           background-color: $lightColor;
-           width: 100px;
-           height: 80px;
-           margin: 5px;
-           justify-content:space-between;
-           align-items:center;
-           font-size: 1em;
-           font-weight: 600;
-           box-sizing: border-box;
-           padding: 10px;
-    
-           i
-           {
-               color: $secondaryColor;
-               font-size:1em;
-           }
-    
-           p
-           {
-               font-weight: 300;
-               font-size: 0.5em;
-               font-family: $primary-font;
-           }
-       }
-    }
-    
-    input::placeholder
-    {
-        color: rgba($color: #FFF, $alpha: 0.7);
-    }
+  input::placeholder {
+    color: rgba($color: #fff, $alpha: 0.7);
+  }
 }
