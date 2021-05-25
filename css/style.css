@@ -412,7 +412,7 @@ nav .nav__a:hover {
   border-bottom: 1px #ebe7e7 solid;
 }
 .about .about__column--left {
-  width: 41%;
+  width: 39%;
   background-color: #01070e;
   justify-content: center;
   height: 325px;
@@ -466,7 +466,7 @@ nav .nav__a:hover {
     border-bottom: 1px #ebe7e7 solid;
   }
   .about .about__column--left {
-    width: 45%;
+    width: 43%;
     background-color: #01070e;
     justify-content: center;
     height: 300px;
@@ -477,10 +477,10 @@ nav .nav__a:hover {
   }
   .about .about__column--left .about__column__img-container {
     border-radius: 20em;
-    padding: 15px;
+    padding: 10px;
   }
   .about .about__column--left .about__column__img-container img {
-    width: 170px;
+    width: 168px;
     height: auto;
     border-radius: 50em;
     padding: 10px;
@@ -496,7 +496,7 @@ nav .nav__a:hover {
     color: #FFF;
     font-family: "Roboto", sans-serif;
     padding: 0 10px;
-    width: 56%;
+    width: 57%;
   }
   .about .about__column--right .about__column--right__heading {
     color: #0072CF;
@@ -508,7 +508,7 @@ nav .nav__a:hover {
   .about .about__column--right .about__column--right__description {
     color: #0072CF;
     font-family: "Roboto", sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 15px;
     color: #FFF;
   }
@@ -561,7 +561,7 @@ nav .nav__a:hover {
     color: #FFF;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
-    font-size: 2em;
+    font-size: 1.5em;
     transition: 2s;
     margin-bottom: 30px;
   }

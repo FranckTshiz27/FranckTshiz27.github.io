@@ -4,7 +4,7 @@
   background-color: #f9f9fe;
 
   .about__column--left {
-    width: 41%;
+    width: 39%;
     background-color: #01070e;
     justify-content: center;
     height: 325px;
@@ -62,7 +62,7 @@
     background-color: #f9f9fe;
 
     .about__column--left {
-      width: 45%;
+      width: 43%;
       background-color: #01070e;
       justify-content: center;
       height: 300px;
@@ -72,9 +72,9 @@
       margin: 0;
       .about__column__img-container {
         border-radius: 20em;
-        padding: 15px;
+        padding: 10px;
         img {
-          width: 170px;
+          width: 168px;
           height: auto;
           border-radius: 50em;
           padding: 10px;
@@ -93,7 +93,7 @@
       color: $lightColor;
       font-family: $primary-font;
       padding: 0 10px;
-      width: 56%;
+      width: 57%;
       .about__column--right__heading {
         color: $secondaryColor;
         font-family: $primary-font;
@@ -105,7 +105,7 @@
       .about__column--right__description {
         color: $secondaryColor;
         font-family: $primary-font;
-        font-size: 12px;
+        font-size: 11px;
         line-height: 15px;
         color: $lightColor;
       }
