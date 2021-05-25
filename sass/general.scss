@@ -1,95 +1,68 @@
-
-body
-{
-    margin:0;
-    padding:0;
-    font-family:$primary-font;
-    font-size: 14px;
-    font-weight: 400;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 400;
 }
 
-body,html
-{
+body,
+html {
   scroll-behavior: smooth;
 }
 
-.smooth 
-{
-   transition: transform .5s ease-out; 
+.smooth {
+  transition: transform 0.5s ease-out;
 }
 
-header
-{
-  
+header {
   margin: 0;
   background-color: $primaryColor;
-  position:fixed;
+  position: fixed;
   z-index: 100;
   display: flex;
   justify-content: center;
   background-color: #007acc;
   width: 100%;
-  .header__logo
-  {
-     font-family:$primary-font;
-     font-size: 20px;
-     font-weight: 900;
-     
+  .header__logo {
+    font-family: $primary-font;
+    font-size: 20px;
+    font-weight: 900;
   }
- 
 }
 
-main
-{
- section
- {
-    
-     padding: 10%;
-     display:flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-  
- }
-}
-
-@media all and (max-width:768px) {
-  header
-{
-  
-  margin: 0;
-  background-color: $primaryColor;
-  position:fixed;
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #007acc;
-  width: 100%;
-  .header__logo
-  {
-     font-family:$primary-font;
-     font-size: 20px;
-     font-weight: 900;
-     
+main {
+  section {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
- 
 }
 
-
-main
-{
- section
- {
-    
-     padding: 30%;
-     display:flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-  
- }
+@media all and (max-width: 768px) {
+  header {
+    margin: 0;
+    background-color: $primaryColor;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #007acc;
+    width: 100%;
+    section {
+      padding: 2%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .header__logo {
+      font-family: $primary-font;
+      font-size: 20px;
+      font-weight: 900;
+    }
+  }
 }
-  
-}
- 

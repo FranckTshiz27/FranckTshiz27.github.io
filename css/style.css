@@ -105,7 +105,8 @@ body {
   font-weight: 400;
 }
 
-body, html {
+body,
+html {
   scroll-behavior: smooth;
 }
 
@@ -149,18 +150,17 @@ main section {
     background-color: #007acc;
     width: 100%;
   }
-  header .header__logo {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-  }
-
-  main section {
-    padding: 30%;
+  header section {
+    padding: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  header .header__logo {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
   }
 }
 nav {
@@ -198,7 +198,7 @@ nav .nav__a {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.1em;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -214,16 +214,18 @@ nav .nav__a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     z-index: 100;
     padding: 0;
     margin: 0;
   }
   nav .mainMenu {
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     list-style: none;
     align-items: center;
+    margin: 0 auto;
   }
   nav .mainMenu .closeMenu {
     display: none;
@@ -231,7 +233,7 @@ nav .nav__a:hover {
   }
   nav .openMenu {
     margin: 10px;
-    display: none;
+    display: flex;
     cursor: pointer;
   }
   nav .openMenu i {
@@ -245,9 +247,9 @@ nav .nav__a:hover {
   }
   nav .nav__a {
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    color: #FFF;
+    font-weight: 700;
+    font-size: 13px;
+    color: #fff;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -388,7 +390,7 @@ nav .nav__a:hover {
 .about {
   display: flex;
   flex-direction: row;
-  background-color: #F9F9FE;
+  background-color: #f9f9fe;
   border-bottom: 1px #ebe7e7 solid;
 }
 .about .about__column--left {
@@ -442,11 +444,11 @@ nav .nav__a:hover {
   .about {
     display: flex;
     flex-direction: row;
-    background-color: #F9F9FE;
+    background-color: #f9f9fe;
     border-bottom: 1px #ebe7e7 solid;
   }
   .about .about__column--left {
-    width: 41%;
+    width: 40%;
     background-color: #01070e;
     justify-content: center;
     height: 300px;
@@ -470,25 +472,25 @@ nav .nav__a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 60%;
     background-color: #131A26;
     height: 300px;
     margin-left: 0;
     color: #FFF;
     font-family: "Roboto", sans-serif;
     padding: 0 10px;
+    width: 61%;
   }
   .about .about__column--right .about__column--right__heading {
     color: #0072CF;
     font-family: "Roboto", sans-serif;
-    font-size: 1.5em;
-    font-weight: 900;
-    margin-bottom: 3px;
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 2px;
   }
   .about .about__column--right .about__column--right__description {
     color: #0072CF;
     font-family: "Roboto", sans-serif;
-    font-size: 0.7em;
+    font-size: 12px;
     line-height: 15px;
     color: #FFF;
   }
@@ -589,7 +591,7 @@ nav .nav__a:hover {
 }
 .project .project__title {
   font-weight: 900;
-  font-size: 3em;
+  font-size: 2em;
   color: #0072CF;
   margin-bottom: 5px;
   position: relative;

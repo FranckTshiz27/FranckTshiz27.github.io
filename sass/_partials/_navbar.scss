@@ -1,130 +1,102 @@
-nav
-{
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index:100;
+  z-index: 100;
   padding: 0;
   margin: 0;
-  .mainMenu
-  {
+  .mainMenu {
     display: flex;
-    justify-content:flex-end;
-    list-style:none;
+    justify-content: flex-end;
+    list-style: none;
     align-items: center;
-   
-   .closeMenu
-   {
-     
-     display: block;
-     cursor: pointer;
-   }
 
-  }
-
- 
-  .openMenu
-  {
-  
-    display:none;
-    cursor:pointer;
-    i
-    {
-      color:#fff;
+    .closeMenu {
+      display: block;
+      cursor: pointer;
     }
   }
 
-  .nav__li
-  {
+  .openMenu {
+    display: none;
+    cursor: pointer;
+    i {
+      color: #fff;
+    }
+  }
+
+  .nav__li {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: $primary-font;
-
   }
-  .nav__a
-  {
-    font-family: 'Montserrat', sans-serif;
+  .nav__a {
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 1.1em;
-    color:#FFF;
+    color: #fff;
     text-decoration: none;
     display: flex;
     align-items: center;
     height: 20px;
     margin: 5px 20px;
-    &:hover
-    {
-        
+    &:hover {
       text-decoration: underline;
     }
-    
   }
-} 
-  
- @media all and (max-width: 768px)
-{ 
-  nav
-  {
+}
+
+@media all and (max-width: 768px) {
+  nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    z-index:100;
+    align-items: flex-start;
+    z-index: 100;
     padding: 0;
     margin: 0;
-    .mainMenu
-    {
+    .mainMenu {
       display: flex;
-      justify-content:flex-end;
-      list-style:none;
+      flex-direction: column;
+      justify-content: flex-end;
+      list-style: none;
       align-items: center;
-     .closeMenu
-     {
-       
-       display: none;
-       cursor: pointer;
-     }
-  
-    }
-  
-   
-    .openMenu
-    {
-      margin: 10px;
-      display:none;
-      cursor: pointer;
-      i
-      {
-        color:#fff;
+      margin: 0 auto;
+      .closeMenu {
+        display: none;
+        cursor: pointer;
       }
     }
-  
-    .nav__li
-    {
+
+    .openMenu {
+      margin: 10px;
+      display: flex;
+      cursor: pointer;
+      i {
+        color: #fff;
+      }
+    }
+
+    .nav__li {
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: $primary-font;
     }
-    .nav__a
-    {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 600;
-      font-size: 12px;
-      color:#FFF;
+    .nav__a {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      color: #fff;
       text-decoration: none;
       display: flex;
       align-items: center;
       padding: 2px;
       margin: 5px 3px;
-      &:hover
-      {
-          
+      &:hover {
         text-decoration: underline;
       }
-      
     }
-  } 
-    
-}  
+  }
+}
