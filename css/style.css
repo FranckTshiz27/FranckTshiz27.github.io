@@ -484,6 +484,7 @@ nav .nav__a:hover {
     height: auto;
     border-radius: 50em;
     padding: 10px;
+    margin-left: 5px;
   }
   .about .about__column--right {
     display: flex;
