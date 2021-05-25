@@ -1,187 +1,140 @@
-.home
-{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    background-color:transparent;
-    align-items: center;
-    padding-top: 180px;
-    background-color: $primaryColor;
-    p
-    {
-        font-family: $primary-font;
-        color: $secondaryColor;
-        margin: 0px 4px;
-        word-spacing: 10px;
-        text-align: left;
-        font-weight: 900;
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: transparent;
+  align-items: center;
+  padding-top: 180px;
+  background-color: $primaryColor;
+  width: 100%;
+  p {
+    font-family: $primary-font;
+    color: $secondaryColor;
+    margin: 0px 4px;
+    word-spacing: 10px;
+    text-align: left;
+    font-weight: 900;
+  }
+
+  .home__row {
+    margin-bottom: 20px;
+    display: inline;
+    .home__row__heading {
+      font-size: 2.5em;
+      word-spacing: normal;
+      color: $lightColor;
+      margin-bottom: 4px;
     }
 
-    .home__row
-    {
+    .home__row__indetity {
       margin-bottom: 20px;
+      .home__row__indetity__name {
+        font-size: 2.3em;
+        word-spacing: normal;
+        color: $lightColor;
+      }
+      .home__row__identity__postName {
+        font-size: 2.3em;
+        word-spacing: normal;
+        color: $secondaryColor;
+      }
+    }
+
+    .home__row__profession {
+      font-size: 1.5em;
+      word-spacing: normal;
+      color: $secondaryColor;
+      margin-bottom: 30px;
+    }
+
+    .home__row__contact {
+      font-size: 1.2em;
+      word-spacing: normal;
+      color: $lightColor;
+      text-align: center;
+
+      span {
+        color: $secondaryColor;
+      }
+    }
+
+    .home__row--contact {
+      display: flex;
+      justify-content: center;
+      i {
+        color: red;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: transparent;
+    align-items: center;
+    padding-top: 100px;
+    background-color: $primaryColor;
+    p {
+      font-family: $primary-font;
+      color: $secondaryColor;
+      margin: 0px 4px;
+      word-spacing: 5px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .home__row {
+      margin-bottom: 10px;
       display: inline;
-      .home__row__heading
-      {
-        font-size: 2.5em;
+      .home__row__heading {
+        font-size: 2em;
         word-spacing: normal;
         color: $lightColor;
         margin-bottom: 4px;
       }
 
-      .home__row__indetity
-      {
+      .home__row__indetity {
+        margin-bottom: 10px;
+        .home__row__indetity__name {
+          font-size: 1.3em;
+          word-spacing: normal;
+          color: $lightColor;
+        }
+        .home__row__identity__postName {
+          font-size: 1.3em;
+          word-spacing: normal;
+          color: $secondaryColor;
+        }
+      }
 
-        margin-bottom: 20px;
-        .home__row__indetity__name
-      {
-        font-size: 2.3em;
-        word-spacing: normal;
-        color: $lightColor;
-      }
-      .home__row__identity__postName
-      {
-        font-size: 2.3em;
-        word-spacing: normal;
-        color: $secondaryColor;
-        
-      }
-            
-      }
-      
-      .home__row__profession
-      {
+      .home__row__profession {
         font-size: 1.5em;
         word-spacing: normal;
         color: $secondaryColor;
-        margin-bottom: 30px;
-        
+        margin-bottom: 15px;
       }
 
-      .home__row__contact
-      {
-        font-size: 1.2em;
+      .home__row__contact {
+        font-size: 1.5em;
         word-spacing: normal;
         color: $lightColor;
         text-align: center;
 
-        span
-        {
+        span {
           color: $secondaryColor;
         }
-        
       }
 
-      .home__row--contact
-      {
+      .home__row--contact {
         display: flex;
         justify-content: center;
-        i
-        {
+        i {
           color: red;
         }
-      } 
-
-}
-
-
-
-}
-
-
-
-@media all and (max-width:768px) {
-   
-  
-  .home
-  {
-      display: flex;
-      flex-direction: column;
-      justify-content:space-around;
-      background-color:transparent;
-      align-items: center;
-      padding-top: 100px;
-      background-color: $primaryColor;
-      p
-      {
-          font-family: $primary-font;
-          color: $secondaryColor;
-          margin: 0px 4px;
-          word-spacing: 5px;
-          text-align: left;
-          font-weight: 600;
       }
-  
-      .home__row
-      {
-        margin-bottom: 10px;
-        display: inline;
-        .home__row__heading
-        {
-          font-size: 2em;
-          word-spacing: normal;
-          color: $lightColor;
-          margin-bottom: 4px;
-        }
-  
-        .home__row__indetity
-        {
-  
-          margin-bottom: 10px;
-          .home__row__indetity__name
-        {
-          font-size: 1.3em;
-          word-spacing: normal;
-          color: $lightColor;
-        }
-        .home__row__identity__postName
-        {
-          font-size: 1.3em;
-          word-spacing: normal;
-          color: $secondaryColor;
-          
-        }
-              
-        }
-        
-        .home__row__profession
-        {
-          font-size: 1.5em;
-          word-spacing: normal;
-          color: $secondaryColor;
-          margin-bottom: 15px;
-          
-        }
-  
-        .home__row__contact
-        {
-          font-size: 1.5em;
-          word-spacing: normal;
-          color: $lightColor;
-          text-align: center;
-  
-          span
-          {
-            color: $secondaryColor;
-          }
-          
-        }
-  
-        .home__row--contact
-        {
-          display: flex;
-          justify-content: center;
-          i
-          {
-            color: red;
-          }
-        } 
-  
+    }
   }
-  
-  
-  
-  }
-    
 }
-
