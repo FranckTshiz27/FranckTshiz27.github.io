@@ -534,7 +534,7 @@ nav .nav__a:hover {
   color: #FFF;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 3.5em;
+  font-size: 2.5em;
   transition: 2s;
   margin-bottom: 30px;
 }
@@ -620,7 +620,7 @@ nav .nav__a:hover {
 }
 .project .project__title {
   font-weight: 900;
-  font-size: 2em;
+  font-size: 2.5em;
   color: #0072CF;
   margin-bottom: 5px;
   position: relative;

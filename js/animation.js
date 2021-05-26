@@ -12,7 +12,7 @@ function initComponents() {
   closeMenu = document.querySelector(".closeMenu");
   btnMenu = document.querySelector(".navbar-toggler");
   nav = document.querySelector("#navbarTogglerDemo01");
-  getLinks(mainMenu);
+  // getLinks(mainMenu);
 }
 
 function getLinks(mainMenu) {
@@ -47,7 +47,6 @@ function removeActiveLink() {
 openMenu.addEventListener("click", show);
 
 openMenu.addEventListener("click", show);
-closeMenu.addEventListener("click", close);
 
 function show() {
   isVisible = !isVisible;
