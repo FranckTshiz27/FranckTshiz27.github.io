@@ -255,7 +255,7 @@ nav .nav__a:hover {
     list-style: none;
     align-items: center;
     position: relative;
-    transform: translateX(90%);
+    transform: translateX(80%);
   }
   nav .mainMenu .closeMenu {
     display: none;
