@@ -217,14 +217,14 @@ nav .nav__li {
 nav .nav__a {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 1.1em;
-  color: #fff;
+  font-size: 1em;
   text-decoration: none;
   display: flex;
   align-items: center;
   height: 92%;
-  margin: 10px 20px;
+  margin: 10px 5px;
   padding: 0px 5px;
+  color: #fff;
 }
 nav .nav__a:hover {
   background-color: #fff;
@@ -232,7 +232,7 @@ nav .nav__a:hover {
   border-radius: 0px 0px 20px 20px;
 }
 
-.active {
+#active1 {
   background-color: #fff;
   color: #4bacec;
   border-radius: 0px 0px 20px 20px;
@@ -254,7 +254,8 @@ nav .nav__a:hover {
     justify-content: flex-end;
     list-style: none;
     align-items: center;
-    margin: 0 auto;
+    position: relative;
+    transform: translateX(90%);
   }
   nav .mainMenu .closeMenu {
     display: none;
@@ -286,8 +287,8 @@ nav .nav__a:hover {
     margin: 5px 3px;
   }
   nav .nav__a:hover {
-    background-color: black;
-    color: chocolate;
+    color: #4bacec;
+    background-color: transparent;
   }
 }
 .home {

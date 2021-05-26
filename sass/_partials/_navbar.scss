@@ -5,13 +5,13 @@ nav {
   z-index: 100;
   padding: 0;
   margin: 0;
+
   .mainMenu {
     display: flex;
     justify-content: flex-end;
     list-style: none;
     align-items: center;
     height: 100%;
-
     .closeMenu {
       display: block;
       cursor: pointer;
@@ -36,14 +36,14 @@ nav {
   .nav__a {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 1.1em;
-    color: #fff;
+    font-size: 1em;
     text-decoration: none;
     display: flex;
     align-items: center;
     height: 92%;
-    margin: 10px 20px;
+    margin: 10px 5px;
     padding: 0px 5px;
+    color: #fff;
     &:hover {
       background-color: #fff;
       color: #4bacec;
@@ -52,7 +52,7 @@ nav {
   }
 }
 
-.active {
+#active1 {
   background-color: #fff;
   color: #4bacec;
   border-radius: 0px 0px 20px 20px;
@@ -73,7 +73,8 @@ nav {
       justify-content: flex-end;
       list-style: none;
       align-items: center;
-      margin: 0 auto;
+      position: relative;
+      transform: translateX(90%);
       .closeMenu {
         display: none;
         cursor: pointer;
@@ -106,8 +107,8 @@ nav {
       padding: 2px;
       margin: 5px 3px;
       &:hover {
-        background-color: black;
-        color: chocolate;
+        color: #4bacec;
+        background-color: transparent;
       }
     }
   }

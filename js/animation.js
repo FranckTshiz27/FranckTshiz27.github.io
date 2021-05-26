@@ -5,6 +5,7 @@ let btnMenu;
 let nav;
 let isVisible = false;
 let links = [];
+let activeLink;
 initComponents();
 function initComponents() {
   mainMenu = document.querySelector(".mainMenu");
@@ -12,14 +13,15 @@ function initComponents() {
   closeMenu = document.querySelector(".closeMenu");
   btnMenu = document.querySelector(".navbar-toggler");
   nav = document.querySelector("#navbarTogglerDemo01");
-  // getLinks(mainMenu);
+  getLinks(mainMenu);
 }
 
 function getLinks(mainMenu) {
   if (mainMenu != null) {
     let lis = mainMenu.children;
     for (let item of lis) {
-      link = item.children;
+      link = item.children[0];
+      console.log(link);
       if (link != null) {
         links.push(link);
       }
@@ -31,18 +33,17 @@ function getLinks(mainMenu) {
 
 function setActions() {
   for (let elt of links) {
-    elt.addEventListener("click", function () {});
+    elt.addEventListener("click", () => removeActiveLink(elt));
   }
 }
 
-function setActive(link) {}
-function removeActiveLink() {
-  let activeLink;
+function removeActiveLink(elt) {
+  activeLink = elt;
   for (let link of links) {
-    if (link.contains("active")) {
-      link.remove("active");
-    }
+    link.removeAttribute("id");
+    console.log(link.textContent);
   }
+  activeLink.setAttribute("id", "active1");
 }
 openMenu.addEventListener("click", show);
 
@@ -61,14 +62,4 @@ function show() {
 
 function close() {
   mainMenu.style.top = "-100%";
-}
-
-let hash = window.location.hash;
-let aLinkActualHash = document.querySelector('a[href="' + hash + '"]');
-if (
-  aLinkActualHash !== null &&
-  !aLinkActualHash.parentNode.classList.contains("active")
-) {
-  console.log("hash");
-  showTabs(aLinkActualHash);
 }
