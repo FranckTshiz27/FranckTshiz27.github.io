@@ -44,7 +44,7 @@
       font-size: 1.5em;
       word-spacing: normal;
       color: $secondaryColor;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     .home__row__contact {
@@ -52,6 +52,7 @@
       word-spacing: normal;
       color: $lightColor;
       text-align: center;
+      padding: 12px;
 
       span {
         color: $secondaryColor;
@@ -61,9 +62,6 @@
     .home__row--contact {
       display: flex;
       justify-content: center;
-      i {
-        color: red;
-      }
     }
   }
 }

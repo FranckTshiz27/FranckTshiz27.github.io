@@ -21,7 +21,7 @@ header {
   position: fixed;
   z-index: 100;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   background-color: #007acc;
   width: 100%;
   .header__logo {

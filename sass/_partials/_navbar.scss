@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   z-index: 100;
   padding: 0;
@@ -10,6 +10,7 @@ nav {
     justify-content: flex-end;
     list-style: none;
     align-items: center;
+    height: 100%;
 
     .closeMenu {
       display: block;
@@ -30,6 +31,7 @@ nav {
     align-items: center;
     justify-content: center;
     font-family: $primary-font;
+    height: 100%;
   }
   .nav__a {
     font-family: "Montserrat", sans-serif;
@@ -39,12 +41,21 @@ nav {
     text-decoration: none;
     display: flex;
     align-items: center;
-    height: 20px;
-    margin: 5px 20px;
+    height: 92%;
+    margin: 10px 20px;
+    padding: 0px 5px;
     &:hover {
-      text-decoration: underline;
+      background-color: #fff;
+      color: #4bacec;
+      border-radius: 0px 0px 20px 20px;
     }
   }
+}
+
+.active {
+  background-color: #fff;
+  color: #4bacec;
+  border-radius: 0px 0px 20px 20px;
 }
 
 @media all and (max-width: 768px) {
@@ -95,7 +106,8 @@ nav {
       padding: 2px;
       margin: 5px 3px;
       &:hover {
-        text-decoration: underline;
+        background-color: black;
+        color: chocolate;
       }
     }
   }

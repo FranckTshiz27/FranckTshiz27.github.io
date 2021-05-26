@@ -138,7 +138,7 @@ header {
   position: fixed;
   z-index: 100;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   background-color: #007acc;
   width: 100%;
 }
@@ -183,7 +183,7 @@ main section {
 }
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   z-index: 100;
   padding: 0;
@@ -194,6 +194,7 @@ nav .mainMenu {
   justify-content: flex-end;
   list-style: none;
   align-items: center;
+  height: 100%;
 }
 nav .mainMenu .closeMenu {
   display: block;
@@ -211,6 +212,7 @@ nav .nav__li {
   align-items: center;
   justify-content: center;
   font-family: "Roboto", sans-serif;
+  height: 100%;
 }
 nav .nav__a {
   font-family: "Montserrat", sans-serif;
@@ -220,11 +222,20 @@ nav .nav__a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  height: 20px;
-  margin: 5px 20px;
+  height: 92%;
+  margin: 10px 20px;
+  padding: 0px 5px;
 }
 nav .nav__a:hover {
-  text-decoration: underline;
+  background-color: #fff;
+  color: #4bacec;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.active {
+  background-color: #fff;
+  color: #4bacec;
+  border-radius: 0px 0px 20px 20px;
 }
 
 @media all and (max-width: 768px) {
@@ -275,7 +286,8 @@ nav .nav__a:hover {
     margin: 5px 3px;
   }
   nav .nav__a:hover {
-    text-decoration: underline;
+    background-color: black;
+    color: chocolate;
   }
 }
 .home {
@@ -322,13 +334,14 @@ nav .nav__a:hover {
   font-size: 1.5em;
   word-spacing: normal;
   color: #0072CF;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .home .home__row .home__row__contact {
   font-size: 1.2em;
   word-spacing: normal;
   color: #FFF;
   text-align: center;
+  padding: 12px;
 }
 .home .home__row .home__row__contact span {
   color: #0072CF;
@@ -336,9 +349,6 @@ nav .nav__a:hover {
 .home .home__row .home__row--contact {
   display: flex;
   justify-content: center;
-}
-.home .home__row .home__row--contact i {
-  color: red;
 }
 
 @media all and (max-width: 768px) {
